@@ -1,0 +1,14 @@
+-- Write a SQL query that orders the items by price
+Select item_id 
+from superstore
+order by price;
+-- Write a SQL query that will show a statistic about the item prices
+Select AVG(price)
+from superstore;
+-- Write your own SQL query that will show a statistic about the price for items in the category of "Kitchen Supplies".
+Select AVG(price)
+from superstore
+where item_name = "Kitchen Supplies";
+-- Come up with your own question about the data and try to answer it
+Select Count(item_id)
+from superstore;
